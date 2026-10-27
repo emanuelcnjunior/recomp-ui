@@ -91,7 +91,9 @@ static const SystemProfile kSystemProfileSnes = {
                                     * control that does nothing is worse than
                                     * an absent one. Unbound by default here
                                     * too: F8 is LoadState slot 8. */
-                                   (1u << LNG_HK_REWIND)),
+                                   (1u << LNG_HK_REWIND) |
+                                   (1u << LNG_HK_QUICK_SAVE) |
+                                   (1u << LNG_HK_QUICK_LOAD)),
     /* panels_dashboard  */ kPanelsDashboardCommon,
     /* panels_settings   */ kPanelsSettingsSnes,
     /* panels_controller */ kPanelsControllerCommon,
